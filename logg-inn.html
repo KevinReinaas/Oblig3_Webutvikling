@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Skobutikk - Hjem</title>
+</head>
+<body>
+    <header>
+        <!-- Linker for mobil versjon -->
+        <div class="dropdown" style="margin-left: 20px;">
+            <button class="drop"><img src="img/meny.png" alt="Menu"></button>
+            <nav class="dropdown-content">
+              <a href="produkt.html">Damer</a>
+              <a href="produkt.html">Herrer</a><br>
+              <a href="logg-inn.html">Logg inn</a>
+              <a href="logg-inn.html">Registrer</a>
+            </nav>
+        </div>
+        <!-- Linker for desktop versjon -->
+        <nav class="meny">
+            <ul>
+                <li><a href="produkt.html">Damer</a></li>
+                <li><a href="produkt.html">Herrer</a></li>
+                <li><a href="logg-inn.html">Logg inn</a></li>
+                <li><a href="logg-inn.html">Registrer</a></li>
+            </ul>
+        </nav>
+            <a href="index.html" class="logo"><img src="img/logo.png" alt="Skobutikken"></a>
+        <!-- Søkebar for mobil versjon -->
+        <div class="dropdown">
+            <button class="drop"><img src="img/search.png" alt="Search"></button>
+            <input type="text" placeholder="Search..." class="dropdown-content">
+        </div>
+        <!-- Søkebar for desktop versjon -->
+            <input type="text" placeholder="Search..." class="search-bar">
+            <i class="fa-solid fa-cart-shopping fa-2xl cart"></i>
+    </header>
+
+    <main>
+        <img src="img/login.png" class="login" alt="Login">
+        <section class="login-form">
+            <h2>Logg inn på din konto</h2>
+            <form action="handle_login.php" method="post">
+                <label for="username">Brukernavn</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Passord</label>
+                <input type="password" id="password" name="password" required>
+                <div>
+                <input type="checkbox" id="checkbox" name="checkbox" value="checked"><label for="checkbox">Husk meg</label>
+                <label class="glemt">Glemt passord?</label>
+                </div>
+            <button type="submit">Logg inn</button>
+            </form>
+            <a href="logg-inn.html" class="medlem">Ny medlem?<br>Registrer</a>
+        </section>
+    </main>
+
+    <footer>
+        <section class="top-left">
+            <ul>
+                <li><a href="logg-inn.html">Logg inn</a></li>
+                <li><a href="logg-inn.html">Registrer</a></li>
+                <li><h4>Order status</h4></li>
+            </ul>
+        </section>
+        <section class="top-right">
+            <ul>
+                <li><h4>Levering</h4></li>
+                <li><h4>Retur</h4></li>
+                <li><a href="produkt.html">Størrelser</a></li>
+            </ul>
+        </section>
+        <section class="bottom-left">
+            <h4>Følg oss:</h4><br>
+            <img src="img/instagram.png" alt="Instagram">
+        </section>
+        <section class="bottom-right">
+            <ul>
+                <li><h4>Terms of Use</h4></li>
+                <li><h4>Terms of Service</h4></li>
+                <li><h4>Privacy Policy</h4></li>
+            </ul>
+        </section>
+    </footer>
+</body>
+</html>
