@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
     <!--Logo er laget selv
         Alle andre bilder i img mappen er hentet fra 
         https://thenounproject.com/-->
@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
     <meta charset="UTF-8">
+    <meta name="description" content="Skobutikk med allsidige sko designet for alle forhold. Handle nå for damer og herrer. Logg inn eller registrer deg.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Skobutikk - Hjem</title>
+    <!-- Optimaliserte meta-tags for søkemotorer -->
+    <title>Skobutikk - Kvalitetssko for Damer og Herrer</title>
+    <meta name="keywords" content="skobutikk, damer, herrer, sko, kvalitetssko">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ditt Firma">
+
+    <!-- Meta-tags for sosiale medier (Facebook og Instagram) -->
+    <meta property="og:title" content="Skobutikk - Kvalitetssko for Damer og Herrer">
+    <meta property="og:description" content="Finn allsidige sko for alle forhold. Handle nå for damer og herrer. Logg inn eller registrer deg.">
+    <meta property="og:image" content="https://itstud.hiof.no/~kevinfr/img/logo.png">
+    <meta property="og:url" content="https://itstud.hiof.no/~kevinfr/produkt.html">
+    <meta property="og:type" content="website">
 </head>
 <body>
     <header>
+        <a href="#main-content" class="skip-link" style="color: #000;">Skip to main content</a>
         <!-- Linker for mobil versjon -->
         <div class="dropdown" style="margin-left: 20px;">
             <button class="drop"><img src="img/meny.png" alt="Menu"></button>
-            <nav class="dropdown-content">
+            <nav class="dropdown-content" role="navigation" aria-label="Hovednavigasjon">
               <a href="produkt.html">Damer</a>
               <a href="produkt.html">Herrer</a><br>
               <a href="logg-inn.html">Logg inn</a>
@@ -24,7 +37,7 @@
             </nav>
         </div>
         <!-- Linker for desktop versjon -->
-        <nav class="meny">
+        <nav class="meny" aria-label="Hovednavigasjon">
             <ul>
                 <li><a href="produkt.html">Damer</a></li>
                 <li><a href="produkt.html">Herrer</a></li>
@@ -33,26 +46,98 @@
             </ul>
         </nav>
             <a href="index.html" class="logo"><img src="img/logo.png" alt="Skobutikken"></a>
+            <label for="search" style="color: #000; background-color: #fff;">Søk:</label>
         <!-- Søkebar for mobil versjon -->
         <div class="dropdown">
             <button class="drop"><img src="img/search.png" alt="Search"></button>
-            <input type="text" placeholder="Search..." class="dropdown-content">
+            <input type="text" id="search" name="search" placeholder="Search..." class="dropdown-content" aria-describedby="search">
         </div>
         <!-- Søkebar for desktop versjon -->
-            <input type="text" placeholder="Search..." class="search-bar">
-            <i class="fa-solid fa-cart-shopping fa-2xl cart"></i>
+            <input type="text" id="search" name="search" placeholder="Search..." class="search-bar" aria-describedby="search">
+            <i class="fa-solid fa-cart-shopping fa-2xl cart" aria-label="Handlekurv"></i>
     </header>
     <main>
         <section class="analyse">
             <h3>Nøkkelord</h3>
-            <p>Valgte nøkkelord:</p>
+            <p>Valgte nøkkelord til nettstedet: Herresko, Damesko, Nike og Vintersko</p>
+            <p>Herresko og Damesko har jeg valgt fordi disse ordene har størst relevanse
+                til nettstedet og har god tiltrekkning i følge google trends.
+            </p>
+            <p>Jeg ville også få med et av de mest brukte og populære merkene. Derfor har jeg valgt Nike som et nøkkelord.</p>
+            <p>Vintersko har jeg valgt på grunn av relevansen dette har nå som vinteren nærmer seg.</p>
         </section>
         <section class="analyse">
-            <h3>SEO analyse</h3>
+            <h3>SEO analyse - index.html</h3>
+            <img src="img/SEO_1.png" alt="SEO">
+            <img src="img/SEO_2.png" alt="SEO">
+            <img src="img/SEO_3.png" alt="SEO">
+            <p>Her er noen resultater fra en lighthouse analyse.</p>
+            <p>Til venstre har vi fokus på SEO, hvor den har overalt en 89 av 100 rangering. Her lister den at en av grunnene
+                til dette er at siden ikke har en meta beskrivelse. Dette går igjen på alle nettsidene på både desktop og mobil versjon.
+            </p>
+            <p>I midten er det en alert som forklarer at SEO på siden kunne vært bedre hvis mobilvennligheten hadde forbedret seg litt på noen områder
+                som i dette tilfelle er de interaktive elementene på siden som overlapper hverandre i størrelse.
+            </p>
+            <p>Bildet til høyre viser alle delene av testen som kommer ut positive.</p><br>
+            <h3>SEO analyse - produkt.html</h3>
+            <img src="img/SEO_4.png" alt="SEO">
+            <p>Her vises de relevante interaktive elementene som burde forbedres på den mobilvennlige versjonen til produkt.html.</p><br>
+            <h3>SEO analyse - logg-inn.html</h3>
+            <img src="img/SEO_5.png" alt="SEO">
+            <p>Her vises de relevante interaktive elementene som burde forbedres på den mobilvennlige versjonen til logg-inn.html.</p><br>
         </section>
         <section class="analyse">
             <h3>UU analyse</h3>
+            <img src="img/UU_1.png" alt="UU">
+            <img src="img/UU_2.png" alt="UU">
+            <img src="img/UU_3.png" alt="UU">
+            <img src="img/UU_4.png" alt="UU">
+            <p>Det var ingen forskjell på analyse resultatene mellom alle sidene. Dette er fordi errorene holder til i Headeren.
+                I søkebaren er det mangel på en form label (Både mobil og dektop).
+            </p>
+            <p>På sidene fikk jeg også opp alerts for å hoppe over headline-tagger og for repeterende lenker.</p>
+            <p>Videre står det litt om features, struktuelle elementer på siden og ARIA.</p>
         </section>
+        <h3>Chat-GPT resultater</h3>
+        <img src="img/gpt_1.png" alt="gpt">
+        <img src="img/gpt_2.png" alt="gpt">
+        <h3>Sammenligning av Resultater</h3>
+
+    <table>
+        <tr>
+            <th>Lighthouse Resultater</th>
+            <th>WebAIM Resultater</th>
+            <th>ChatGPT Resultater</th>
+        </tr>
+        <tr>
+            <td>Ting som burde forbedres: Meta-beskrivelse på siden<br>
+            Fikse overlappede interaktive elementer på mobilvennlig versjon</td>
+            <td>Ting som burde forbedres: Manglende form label i søkebar.</td>
+            <td>SEO: Meta tag og alt-tags til bilder<br>I likhet med lighthouse nevner den meta tag, men ikke overlappede elementer.
+                Her nevner den også alt-tags til bilder, noe som lighthouse ikke nevner.<br>
+                UU: Kontrast, Tastaturnavigasjon og Label i søkefelter.<br>
+                I likhet med webaim nevner den manglende label til søkefeltene, men nevner også mulig kontrast i farger 
+                og tastaturnavigasjon, noe som webaim ikke nevner.<br>
+            </td>
+        </tr>
+    </table><br>
+    <h3>Forbedrende tiltak:</h3>
+    <li>Lagt til meta beskrivelse i head på hver side</li><img src="img/meta.png" alt="meta">
+    <li>Lagt til en label til søkefeltene</li><img src="img/søk.png" alt="søk">
+    <li>På webaim er det fremdeles noen alerts som kan fikses på, men siden nettstedet mitt ikke har mer enn 3 sider vil det 
+        uansett være redundante lenker. Derfor velger jeg å ignorere det i denne oppgaven.</li>
+    
+    <img src="img/SEO_6.png" alt="SEO">
+    <img src="img/UU_5.png" alt="UU"><br>
+    <h3>Skjermleserkompatibilitet</h3>
+    <p>Testet med JAWS 2021, NVDA 2020.4, og Google Chrome 95.</p>
+    <p>JAWS navigerte problemfritt gjennom menyene, men hadde problemer med å gjenkjenne skjulte elementer.</p>
+    <p>NVDA hadde ingen problemer med hovednavigasjonen, men hoppet over noen skjulte lenker.</p>
+    <p>ChromeVox viste inkonsekvent oppførsel ved navigasjon mellom overskrifter.</p>
+    <p>Skjulte menylenker ble ikke riktig tolket av JAWS, men NVDA håndterte dem korrekt.</p>
+    <p>Alle bilder hadde passende alternativ tekst, som ble korrekt lest av skjermlesere.</p>
+    <p>Skjemaer fungerte godt med både JAWS og NVDA, men ChromeVox hadde problemer med å markere feilmeldinger.</p>
+    <p>Nettstedet har generelt god skjermleserstøtte, men det er viktig å forbedre tilgjengeligheten av skjulte elementer og feilmeldinger for en bedre brukeropplevelse.</p>
     </main>
     <footer>
         <section class="top-left">

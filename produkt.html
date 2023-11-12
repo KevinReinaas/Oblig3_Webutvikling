@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb" itemscope itemtype="http://schema.org/Skobutikk">
     <!--Logo er laget selv
         Alle andre bilder i img mappen er hentet fra 
         https://thenounproject.com/-->
@@ -7,16 +7,43 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href='https://fonts.googleapis.com/css?family=Epilogue' rel='stylesheet'>
     <meta charset="UTF-8">
+    <meta itemprop="description" content="Skobutikk med allsidige sko designet for alle forhold. Handle nå for damer og herrer. Logg inn eller registrer deg.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Skobutikk - Hjem</title>
+    <!-- Optimaliserte meta-tags for søkemotorer -->
+    <title>Skobutikk - Kvalitetssko for Damer og Herrer</title>
+    <meta name="keywords" content="skobutikk, damer, herrer, sko, kvalitetssko">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ditt Firma">
+
+    <!-- Meta-tags for sosiale medier (Facebook og Instagram) -->
+    <meta property="og:title" content="Skobutikk - Kvalitetssko for Damer og Herrer">
+    <meta property="og:description" content="Finn allsidige sko for alle forhold. Handle nå for damer og herrer. Logg inn eller registrer deg.">
+    <meta property="og:image" content="https://itstud.hiof.no/~kevinfr/img/logo.png">
+    <meta property="og:url" content="https://itstud.hiof.no/~kevinfr/produkt.html">
+    <meta property="og:type" content="website">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Skobutikk",
+            "url": "https://itstud.hiof.no/~kevinfr/produkt.html",
+            "logo": "https://itstud.hiof.no/~kevinfr/img/logo.png",
+            "description": "Skobutikk med allsidige sko designet for alle forhold. Handle nå for damer og herrer.",
+            "sameAs": [
+                "https://www.facebook.com/din-facebook-side",
+                "https://www.instagram.com/din-instagram-side"
+            ]
+        }
+    </script>
 </head>
 <body>
     <header>
+        <a href="#main-content" class="skip-link" style="color: #000;">Skip to main content</a>
         <!-- Linker for mobil versjon -->
         <div class="dropdown" style="margin-left: 20px;">
             <button class="drop"><img src="img/meny.png" alt="Menu"></button>
-            <nav class="dropdown-content">
+            <nav class="dropdown-content" role="navigation" aria-label="Hovednavigasjon">
               <a href="produkt.html">Damer</a>
               <a href="produkt.html">Herrer</a><br>
               <a href="logg-inn.html">Logg inn</a>
@@ -24,7 +51,7 @@
             </nav>
         </div>
         <!-- Linker for desktop versjon -->
-        <nav class="meny">
+        <nav class="meny" aria-label="Hovednavigasjon">
             <ul>
                 <li><a href="produkt.html">Damer</a></li>
                 <li><a href="produkt.html">Herrer</a></li>
@@ -33,56 +60,57 @@
             </ul>
         </nav>
             <a href="index.html" class="logo"><img src="img/logo.png" alt="Skobutikken"></a>
+            <label for="search" style="color: #000; background-color: #fff;">Søk:</label>
         <!-- Søkebar for mobil versjon -->
         <div class="dropdown">
             <button class="drop"><img src="img/search.png" alt="Search"></button>
-            <input type="text" placeholder="Search..." class="dropdown-content">
+            <input type="text" id="search" name="search" placeholder="Search..." class="dropdown-content" aria-describedby="search">
         </div>
         <!-- Søkebar for desktop versjon -->
-            <input type="text" placeholder="Search..." class="search-bar">
-            <i class="fa-solid fa-cart-shopping fa-2xl cart"></i>
+            <input type="text" id="search" name="search" placeholder="Search..." class="search-bar" aria-describedby="search">
+            <i class="fa-solid fa-cart-shopping fa-2xl cart" aria-label="Handlekurv"></i>
     </header>
 
     <main>
        <h3>Damer<br>Nylig utgitt:</h3>
-    <div class="shoes">
-        <section class="shoe-box">
-            <img src="img/sko1.png" alt="Shoe1">
+    <div class="shoes" itemscope itemtype="http://schema.org/Produkt">
+        <section class="shoe-box" itemprop="offers" itemscope itemtype="http://schema.org/Tilbud">
+            <img src="img/sko1.png" alt="Shoe1" itemprop="image">
             <p class="shoe-name">Dame 1</p>
-            <h4 class="shoe-price">799kr</h4>
+            <h4 class="shoe-price" itemprop="price">799kr</h4>
         </section>
-        <section class="shoe-box">
-            <img src="img/sko2.png" alt="Shoe2">
-            <p class="shoe-name">Dame 2</p>
-            <h4 class="shoe-price">599kr</h4>
+        <section class="shoe-box" itemprop="offers" itemscope itemtype="http://schema.org/Tilbud">
+            <img src="img/sko2.png" alt="Shoe2" itemprop="image">
+            <p class="shoe-name" itemprop="name">Dame 2</p>
+            <h4 class="shoe-price" itemprop="price">599kr</h4>
         </section>
-        <section class="shoe-box">
-            <img src="img/sko4.png" alt="Shoe4">
-            <p class="shoe-name">Dame 3</p>
-            <h4 class="shoe-price">969kr</h4>
+        <section class="shoe-box" itemprop="offers" itemscope itemtype="http://schema.org/Tilbud">
+            <img src="img/sko4.png" alt="Shoe4" itemprop="image">
+            <p class="shoe-name" itemprop="name">Dame 3</p>
+            <h4 class="shoe-price" itemprop="price">969kr</h4>
         </section>
     </div>
        <h3>Herrer<br>Nylig utgitt:</h3>
     <div class="shoes">
-        <section class="shoe-box">
-            <img src="img/sko1.png" alt="Shoe1">
-            <p class="shoe-name">Herre 1</p>
-            <h4 class="shoe-price">799kr</h4>
+        <section class="shoe-box" itemprop="offers" itemscope itemtype="http://schema.org/Tilbud">
+            <img src="img/sko1.png" alt="Shoe1" itemprop="image">
+            <p class="shoe-name" itemprop="name">Herre 1</p>
+            <h4 class="shoe-price" itemprop="price">799kr</h4>
         </section>
-        <section class="shoe-box">
-            <img src="img/sko2.png" alt="Shoe2">
-            <p class="shoe-name">Herre 2</p>
-            <h4 class="shoe-price">599kr</h4>
+        <section class="shoe-box" itemprop="offers" itemscope itemtype="http://schema.org/Tilbud">
+            <img src="img/sko2.png" alt="Shoe2" itemprop="image">
+            <p class="shoe-name" itemprop="name">Herre 2</p>
+            <h4 class="shoe-price" itemprop="price">599kr</h4>
         </section>
-        <section class="shoe-box">
-            <img src="img/sko4.png" alt="Shoe4">
-            <p class="shoe-name">Herre 3</p>
-            <h4 class="shoe-price">969kr</h4>
+        <section class="shoe-box" itemprop="offers" itemscope itemtype="http://schema.org/Tilbud">
+            <img src="img/sko4.png" alt="Shoe4" itemprop="image">
+            <p class="shoe-name" itemprop="name">Herre 3</p>
+            <h4 class="shoe-price" itemprop="price">969kr</h4>
         </section>
     </div>
     </main>
 
-    <footer>
+    <footer itemscope itemtype="http://schema.org/Footer">
         <section class="top-left">
             <ul>
                 <li><a href="logg-inn.html">Logg inn</a></li>
@@ -99,7 +127,7 @@
         </section>
         <section class="bottom-left">
             <h4>Følg oss:</h4><br>
-            <img src="img/instagram.png" alt="Instagram">
+            <img src="img/instagram.png" alt="Instagram" itemprop="image">
         </section>
         <section class="bottom-right">
             <ul>

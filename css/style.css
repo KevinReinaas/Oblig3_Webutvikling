@@ -75,7 +75,6 @@ nav a {
     font-size: 16px;
 }
 
-
 .cart {
     color: #000;
 }
@@ -151,10 +150,11 @@ a {
     text-decoration: none;
     color: #fff;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .bottom-left img {
-    width: 50px;
+    width: 100px;
 }
 
 /* Legger til styling for forsiden */
@@ -353,6 +353,30 @@ h4 {
 .analyse {
     margin: 25px;
 }
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    z-index: 1000;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+table {
+    border: 2;
+}
+
 /* Stiler for større skjermer (over 600px) */
 @media (min-width: 600px) {
     
